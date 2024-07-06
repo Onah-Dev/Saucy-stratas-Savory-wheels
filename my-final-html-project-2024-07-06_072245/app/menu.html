@@ -1,0 +1,1356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Saucy Stratas N' Savory Wheels</title>
+    <!-- The website stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+    <!-- The website JavaScript file -->
+    <script src="/script.js"></script>
+  </head>
+  <!-- header content -->
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <a href="index.html"
+            ><img
+              src="https://cdn.glitch.global/94776099-51bd-46af-8c51-d6a1bef3dea4/pizza-logo-vector_25327-119%20copy.png?v=1714733968241"
+              alt="Logo"
+          /></a>
+          <h2 class="topic">Saucy Stratas N' Savory Wheels...</h2>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="combos.html">Combos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- pizza menu-->
+    <section class="menu">
+      <h2>Savory Wheels</h2>
+      <ul class="ml">
+        <li>
+          <img
+            src="https://cdn.glitch.global/94776099-51bd-46af-8c51-d6a1bef3dea4/a6c3a70d-931c-4140-b9cc-cd9addecd4c8.image.png?v=1714834980244"
+            alt="Pizza"
+          />
+          <h3>Melted Wheel</h3>
+          <p>
+            Savor the timeless delight of a Cheese Pizza. With its crispy crust
+            and gooey melted mozzarella cheese, each bite is a comforting blend
+            of savory flavors. Perfect for any occasion, this classic pizza
+            offers simple satisfaction that everyone can enjoy.
+          </p>
+          <!-- see more button -->
+          <button class="seemore" onclick="toggleDescription(this)">
+            See more
+          </button>
+          <!-- grab button -->
+          <button class="grab" onclick="toggleCheckbox()">Grab!</button>
+          <!-- check box for add cart-->
+          <div class="checkbox-container" id="checkbox-container">
+            <br />
+            <form id="order-form">
+              <label for="size">Size:</label>
+              <select id="size" onchange="updatePrice()">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option></select
+              ><br /><br />
+
+              <label for="quantity">Quantity:</label>
+              <input
+                type="number"
+                id="quantity"
+                min="1"
+                value="1"
+                onchange="updatePrice()"
+              /><br /><br />
+
+              <label for="price">Price:</label>
+              <span id="price">LKR 950.00</span><br /><br />
+
+              <input
+                style="background-color: green; color: white; border: none"
+                type="submit"
+                value="Add to Cart"
+              />
+            </form>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://cdn.glitch.global/94776099-51bd-46af-8c51-d6a1bef3dea4/cf4cf403-9ab6-4125-a88d-9bb445dead99.image.png?v=1714891903896"
+            alt="Pizza"
+          />
+          <h3>Garden Harvest Wheel</h3>
+          <p>
+            Enjoy the fresh taste of nature with our Garden Harvest Pizza.
+            Topped with mushrooms, tomatoes, onions, black olives, bell peppers,
+            and double layers of gooey mozzarella cheese, it's a delicious
+            celebration of wholesome ingredients straight from the garden.
+          </p>
+          <!-- see more button -->
+          <button class="seemore" onclick="toggleDescription(this)">
+            See more
+          </button>
+          <!-- grab button -->
+          <button class="grab" onclick="toggleCheckbox2()">Grab!</button>
+          <!-- check box for add cart-->
+          <div class="checkbox-container" id="checkbox-container2">
+            <br />
+            <form id="order-form2">
+              <label for="size2">Size:</label>
+              <select id="size2" onchange="updatePrice2()">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option></select
+              ><br /><br />
+
+              <label for="quantity">Quantity:</label>
+              <input
+                type="number"
+                id="quantity2"
+                min="1"
+                value="1"
+                onchange="updatePrice2()"
+              /><br /><br />
+
+              <label for="price">Price:</label>
+              <span id="price2">LKR 950.00</span><br /><br />
+
+              <input
+                style="background-color: green; color: white; border: none"
+                type="submit"
+                value="Add to Cart"
+              />
+            </form>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://cdn.glitch.global/94776099-51bd-46af-8c51-d6a1bef3dea4/b8502d1c-7109-4340-8d47-3948c86b1d2c.image.png?v=1714835126667"
+            alt="Pizza"
+          />
+          <h3>Firehouse Chicken Wheel</h3>
+          <p>
+            Enjoy our Firehouse Chicken Pizza, featuring spicy grilled chicken,
+            bell peppers, onions, and gooey melted cheese. It's a deliciously
+            bold choice for anyone who loves a bit of heat in their pizza!
+          </p>
+          <!-- see more button -->
+          <button class="seemore" onclick="toggleDescription(this)">
+            See more
+          </button>
+          <!-- grab button -->
+          <button class="grab" onclick="toggleCheckbox3()">Grab!</button>
+          <!-- check box for add cart-->
+          <div class="checkbox-container" id="checkbox-container3">
+            <br />
+            <form id="order-form3">
+              <label for="size3">Size:</label>
+              <select id="size3" onchange="updatePrice3()">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option></select
+              ><br /><br />
+
+              <label for="quantity">Quantity:</label>
+              <input
+                type="number"
+                id="quantity3"
+                min="1"
+                value="1"
+                onchange="updatePrice3()"
+              /><br /><br />
+
+              <label for="price">Price:</label>
+              <span id="price3">LKR 980.00</span><br /><br />
+
+              <input
+                style="background-color: green; color: white; border: none"
+                type="submit"
+                value="Add to Cart"
+              />
+            </form>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://cdn.glitch.global/94776099-51bd-46af-8c51-d6a1bef3dea4/0795a482-1ab1-4da7-9989-945a68632dcd.image.png?v=1714835388436"
+            alt="Pizza"
+          />
+          <h3>Raven Chicken Wheel</h3>
+          <p>
+            Indulge in our unique Black Chicken Pizza, featuring succulent
+            grilled chicken atop a rich charcoal-infused crust, perfectly
+            complemented by a medley of savory toppings and melted cheese. A
+            culinary experience like no other, with flavors that tantalize the
+            taste buds and leave you craving more.
+          </p>
+          <!-- see more button -->
+          <button class="seemore" onclick="toggleDescription(this)">
+            See more
+          </button>
+          <!-- grab button -->
+          <button class="grab" onclick="toggleCheckbox4()">Grab!</button>
+          <!-- check box for add cart-->
+          <div class="checkbox-container" id="checkbox-container4">
+            <br />
+            <form id="order-form4">
+              <label for="size4">Size:</label>
+              <select id="size4" onchange="updatePrice4()">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option></select
+              ><br /><br />
+
+              <label for="quantity">Quantity:</label>
+              <input
+                type="number"
+                id="quantity4"
+                min="1"
+                value="1"
+                onchange="updatePrice4()"
+              /><br /><br />
+
+              <label for="price">Price:</label>
+              <span id="price4">LKR 980.00</span><br /><br />
+              <input
+                style="background-color: green; color: white; border: none"
+                type="submit"
+                value="Add to Cart"
+              />
+            </form>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://cdn.glitch.global/94776099-51bd-46af-8c51-d6a1bef3dea4/7fcbeff7-88e1-43c9-a4e3-231b1709882e.image.png?v=1714835782893"
+            alt="Pizza"
+          />
+          <h3>Seaside Wheel</h3>
+          <p>
+            Topped with a medley of fresh seafood including succulent shrimp,
+            tender calamari, and flavorful fish, each bite is a burst of oceanic
+            flavors complemented by a blend of melted cheese and tangy tomato
+            sauce, all resting on a crispy golden crust.
+          </p>
+          <!-- see more button -->
+          <button class="seemore" onclick="toggleDescription(this)">
+            See more
+          </button>
+          <!-- grab button -->
+          <button class="grab" onclick="toggleCheckbox5()">Grab!</button>
+          <!-- check box for add cart-->
+          <div class="checkbox-container" id="checkbox-container5">
+            <br />
+            <form id="order-form5">
+              <label for="size5">Size:</label>
+              <select id="size5" onchange="updatePrice5()">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option></select
+              ><br /><br />
+
+              <label for="quantity">Quantity:</label>
+              <input
+                type="number"
+                id="quantity5"
+                min="1"
+                value="1"
+                onchange="updatePrice5()"
+              /><br /><br />
+
+              <label for="price">Price:</label>
+              <span id="price5">LKR 1150.00</span><br /><br />
+              <input
+                style="background-color: green; color: white; border: none"
+                type="submit"
+                value="Add to Cart"
+              />
+            </form>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://cdn.glitch.global/94776099-51bd-46af-8c51-d6a1bef3dea4/d9693d84-68da-4aa9-b2d2-b2954f128152.image.png?v=1714836615849"
+            alt="Pizza"
+          />
+          <h3>Surf N' Cluck Wheel</h3>
+          <p>
+            Enjoy a delicious blend of juicy prawns and tender chicken on our
+            pizza. Topped with melted cheese and tangy tomato sauce, it's a
+            perfect combo for seafood and chicken lovers alike.
+          </p>
+          <!-- see more button -->
+          <button class="seemore" onclick="toggleDescription(this)">
+            See more
+          </button>
+          <!-- grab button -->
+          <button class="grab" onclick="toggleCheckbox6()">Grab!</button>
+          <!-- check box for add cart-->
+          <div class="checkbox-container" id="checkbox-container6">
+            <br />
+            <form id="order-form6">
+              <label for="size6">Size:</label>
+              <select id="size6" onchange="updatePrice6()">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option></select
+              ><br /><br />
+
+              <label for="quantity">Quantity:</label>
+              <input
+                type="number"
+                id="quantity6"
+                min="1"
+                value="1"
+                onchange="updatePrice6()"
+              /><br /><br />
+
+              <label for="price">Price:</label>
+              <span id="price6">LKR 1150.00</span><br /><br />
+              <input
+                style="background-color: green; color: white; border: none"
+                type="submit"
+                value="Add to Cart"
+              />
+            </form>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://cdn.glitch.global/94776099-51bd-46af-8c51-d6a1bef3dea4/60ba2385-6c23-4a11-9aa2-60e0d5817729.image.png?v=1714890761480"
+            alt="Pizza"
+          />
+          <h3>Pepperoni Wheel</h3>
+          <p>
+            Delight in the timeless classic of our Pepperoni Pizza. Loaded with
+            zesty pepperoni slices atop a bed of tangy tomato sauce and melted
+            cheese, it's a savory sensation that never goes out of style.
+          </p>
+          <!-- see more button -->
+          <button class="seemore" onclick="toggleDescription(this)">
+            See more
+          </button>
+          <!-- grab button -->
+          <button class="grab" onclick="toggleCheckbox7()">Grab!</button>
+          <!-- check box for add cart-->
+          <div class="checkbox-container" id="checkbox-container7">
+            <br />
+            <form id="order-form7">
+              <label for="size7">Size:</label>
+              <select id="size7" onchange="updatePrice7()">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option></select
+              ><br /><br />
+
+              <label for="quantity">Quantity:</label>
+              <input
+                type="number"
+                id="quantity7"
+                min="1"
+                value="1"
+                onchange="updatePrice7()"
+              /><br /><br />
+
+              <label for="price">Price:</label>
+              <span id="price7">LKR 1150.00</span><br /><br />
+              <input
+                style="background-color: green; color: white; border: none"
+                type="submit"
+                value="Add to Cart"
+              />
+            </form>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://cdn.glitch.global/94776099-51bd-46af-8c51-d6a1bef3dea4/9b8f7b10-bf4b-4db6-8398-2c1a20d780f2.image.png?v=1714891059304"
+            alt="Pizza"
+          />
+          <h3>Meat Lovers Wheel</h3>
+          <p>
+            Piled high with a generous assortment of savory meats, including
+            hearty sausage, crispy bacon, seasoned ground beef, and succulent
+            pepperoni, each bite is a flavor explosion that will satisfy even
+            the heartiest appetite.
+          </p>
+          <!-- see more button -->
+          <button class="seemore" onclick="toggleDescription(this)">
+            See more
+          </button>
+          <!-- grab button -->
+          <button class="grab" onclick="toggleCheckbox8()">Grab!</button>
+          <!-- check box for add cart-->
+          <div class="checkbox-container" id="checkbox-container8">
+            <br />
+            <form id="order-form8">
+              <label for="size8">Size:</label>
+              <select id="size8" onchange="updatePrice8()">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option></select
+              ><br /><br />
+
+              <label for="quantity">Quantity:</label>
+              <input
+                type="number"
+                id="quantity8"
+                min="1"
+                value="1"
+                onchange="updatePrice8()"
+              /><br /><br />
+
+              <label for="price">Price:</label>
+              <span id="price8">LKR 1150.00</span><br /><br />
+              <input
+                style="background-color: green; color: white; border: none"
+                type="submit"
+                value="Add to Cart"
+              />
+            </form>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <!-- lasagna menu -->
+    <section class="menu">
+      <h2>Saucy Stratas</h2>
+      <ul class="ml">
+        <li>
+          <img
+            src="https://cdn.glitch.global/94776099-51bd-46af-8c51-d6a1bef3dea4/lasagna1.png?v=1714910183769"
+            alt="lasagna"
+          />
+          <h3>Italian Renaissance Strata</h3>
+          <p>
+            Experience a culinary masterpiece with our Italian Renaissance
+            Lasagna. A classic dish elevated with a modern twist, each layer of
+            tender pasta, rich marinara sauce, creamy béchamel, and savory meat
+            filling is a journey through Italian culinary history, reimagined
+            for the modern palate.
+          </p>
+          <!-- see more button -->
+          <button class="seemore" onclick="toggleDescription(this)">
+            See more
+          </button>
+          <!-- grab button -->
+          <button class="grab" onclick="toggleCheckboxl()">Grab!</button>
+          <!-- check box for add cart-->
+          <div class="checkbox-container" id="checkbox-containerl">
+            <br />
+            <form id="order-forml">
+              <label for="quantity">Quantity:</label>
+              <input
+                type="number"
+                id="quantityl"
+                min="1"
+                value="1"
+                onchange="updatePricel()"
+              /><br /><br />
+
+              <label for="price">Price:</label>
+              <span id="pricel">LKR 1770.00</span><br /><br />
+
+              <input
+                style="background-color: green; color: white; border: none"
+                type="submit"
+                value="Add to Cart"
+              />
+            </form>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://cdn.glitch.global/94776099-51bd-46af-8c51-d6a1bef3dea4/lasagna2.png?v=1714910185489"
+            alt="lasagna"
+          />
+          <h3>Garden's Strata</h3>
+          <p>
+            Savor the flavors of Italy with our Vegetarian Lasagna. Layers of
+            tender pasta, rich marinara sauce, creamy ricotta cheese, and a
+            colorful array of fresh vegetables come together in this delightful
+            dish, creating a satisfying and wholesome meal that's perfect for
+            any occasion.
+          </p>
+          <!-- see more button -->
+          <button class="seemore" onclick="toggleDescription(this)">
+            See more
+          </button>
+          <!-- grab button -->
+          <button class="grab" onclick="toggleCheckboxl2()">Grab!</button>
+          <!-- check box for add cart-->
+          <div class="checkbox-container" id="checkbox-containerl2">
+            <br />
+            <form id="order-forml2">
+              <label for="quantity">Quantity:</label>
+              <input
+                type="number"
+                id="quantityl2"
+                min="1"
+                value="1"
+                onchange="updatePricel2()"
+              /><br /><br />
+
+              <label for="price">Price:</label>
+              <span id="pricel2">LKR 1770.00</span><br /><br />
+
+              <input
+                style="background-color: green; color: white; border: none"
+                type="submit"
+                value="Add to Cart"
+              />
+            </form>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://cdn.glitch.global/94776099-51bd-46af-8c51-d6a1bef3dea4/lasagna3.png?v=1714910172115"
+            alt="lasagna"
+          />
+          <h3>Chicken Strata</h3>
+          <p>
+            Indulge in our Chicken Lasagna, a comforting classic with a twist.
+            Layers of tender pasta, savory shredded chicken, creamy béchamel
+            sauce, and melted cheese blend harmoniously to create a hearty and
+            flavorful dish that's sure to delight your taste buds.
+          </p>
+          <!-- see more button -->
+          <button class="seemore" onclick="toggleDescription(this)">
+            See more
+          </button>
+          <!-- grab button -->
+          <button class="grab" onclick="toggleCheckboxl3()">Grab!</button>
+          <!-- check box for add cart-->
+          <div class="checkbox-container" id="checkbox-containerl3">
+            <br />
+            <form id="order-forml3">
+              <label for="quantity">Quantity:</label>
+              <input
+                type="number"
+                id="quantityl3"
+                min="1"
+                value="1"
+                onchange="updatePricel3()"
+              /><br /><br />
+
+              <label for="price">Price:</label>
+              <span id="pricel3">LKR 1770.00</span><br /><br />
+
+              <input
+                style="background-color: green; color: white; border: none"
+                type="submit"
+                value="Add to Cart"
+              />
+            </form>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://cdn.glitch.global/94776099-51bd-46af-8c51-d6a1bef3dea4/lasagna4.png?v=1714910174083"
+            alt="lasagna"
+          />
+          <h3>Firecracker Chicken Strata</h3>
+          <p>
+            Get ready to ignite your taste buds with our Firecracker Chicken
+            Lasagna. Packed with tender shredded chicken, spicy seasonings, and
+            layers of creamy cheese, each bite is a flavor explosion that will
+            leave you craving more. It's the perfect combination of heat and
+            comfort in every mouthful.
+          </p>
+          <!-- see more button -->
+          <button class="seemore" onclick="toggleDescription(this)">
+            See more
+          </button>
+          <!-- grab button -->
+          <button class="grab" onclick="toggleCheckboxl4()">Grab!</button>
+          <!-- check box for add cart-->
+          <div class="checkbox-container" id="checkbox-containerl4">
+            <br />
+            <form id="order-forml4">
+              <label for="quantity">Quantity:</label>
+              <input
+                type="number"
+                id="quantityl4"
+                min="1"
+                value="1"
+                onchange="updatePricel4()"
+              /><br /><br />
+
+              <label for="price">Price:</label>
+              <span id="pricel4">LKR 1770.00</span><br /><br />
+
+              <input
+                style="background-color: green; color: white; border: none"
+                type="submit"
+                value="Add to Cart"
+              />
+            </form>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://cdn.glitch.global/94776099-51bd-46af-8c51-d6a1bef3dea4/lasagna5.png?v=1714910175841"
+            alt="lasagna"
+          />
+          <h3>Seaside Wheel</h3>
+          <p>
+            Topped with a medley of fresh seafood including succulent shrimp,
+            tender calamari, and flavorful fish, each bite is a burst of oceanic
+            flavors complemented by a blend of melted cheese and tangy tomato
+            sauce, all resting on a crispy golden crust.
+          </p>
+          <!-- see more button -->
+          <button class="seemore" onclick="toggleDescription(this)">
+            See more
+          </button>
+          <!-- grab button -->
+          <button class="grab" onclick="toggleCheckboxl5()">Grab!</button>
+          <!-- check box for add cart-->
+          <div class="checkbox-container" id="checkbox-containerl5">
+            <br />
+            <form id="order-forml5">
+              <label for="quantity">Quantity:</label>
+              <input
+                type="number"
+                id="quantityl5"
+                min="1"
+                value="1"
+                onchange="updatePricel5()"
+              /><br /><br />
+
+              <label for="price">Price:</label>
+              <span id="pricel5">LKR 1770.00</span><br /><br />
+
+              <input
+                style="background-color: green; color: white; border: none"
+                type="submit"
+                value="Add to Cart"
+              />
+            </form>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://cdn.glitch.global/94776099-51bd-46af-8c51-d6a1bef3dea4/lasagna6.png?v=1714910177588"
+            alt="lasagna"
+          />
+          <h3>Surf 'n' Turf Strata</h3>
+          <p>
+            Indulge in our delightful Prawns and Chicken Lasagna. Tender
+            chicken, succulent prawns, and creamy cheese layers blend together
+            in this savory dish, creating a mouthwatering experience that's both
+            comforting and satisfying.
+          </p>
+          <!-- see more button -->
+          <button class="seemore" onclick="toggleDescription(this)">
+            See more
+          </button>
+          <!-- grab button -->
+          <button class="grab" onclick="toggleCheckboxl6()">Grab!</button>
+          <!-- check box for add cart-->
+          <div class="checkbox-container" id="checkbox-containerl6">
+            <br />
+            <form id="order-forml6">
+              <label for="quantity">Quantity:</label>
+              <input
+                type="number"
+                id="quantityl6"
+                min="1"
+                value="1"
+                onchange="updatePricel6()"
+              /><br /><br />
+
+              <label for="price">Price:</label>
+              <span id="pricel6">LKR 1770.00</span><br /><br />
+
+              <input
+                style="background-color: green; color: white; border: none"
+                type="submit"
+                value="Add to Cart"
+              />
+            </form>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://cdn.glitch.global/94776099-51bd-46af-8c51-d6a1bef3dea4/lasagna7.png?v=1714910179574"
+            alt="lasagna"
+          />
+          <h3>Beefy Cheesy Strata</h3>
+          <p>
+            Indulge in the comforting flavors of our Beef Cheese Lasagna. Layers
+            of tender beef, rich marinara sauce, and creamy cheese come together
+            in this classic Italian dish. Each bite is a warm and satisfying
+            blend of savory beef and gooey cheese, making it the perfect comfort
+            food for any occasion.
+          </p>
+          <!-- see more button -->
+          <button class="seemore" onclick="toggleDescription(this)">
+            See more
+          </button>
+          <!-- grab button -->
+          <button class="grab" onclick="toggleCheckboxl7()">Grab!</button>
+          <!-- check box for add cart-->
+          <div class="checkbox-container" id="checkbox-containerl7">
+            <br />
+            <form id="order-forml7">
+              <label for="quantity">Quantity:</label>
+              <input
+                type="number"
+                id="quantityl7"
+                min="1"
+                value="1"
+                onchange="updatePricel7()"
+              /><br /><br />
+
+              <label for="price">Price:</label>
+              <span id="pricel7">LKR 1770.00</span><br /><br />
+
+              <input
+                style="background-color: green; color: white; border: none"
+                type="submit"
+                value="Add to Cart"
+              />
+            </form>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://cdn.glitch.global/94776099-51bd-46af-8c51-d6a1bef3dea4/lasagna8.png?v=1714910181810"
+            alt="lasagna"
+          />
+          <h3>Carnivore's Strata</h3>
+          <p>
+            Indulge your inner meat lover with our Carnivore's Lasagna. Packed
+            with layers of savory beef, spicy sausage, crispy bacon, and creamy
+            cheese, each bite is a mouthwatering symphony of flavors that will
+            satisfy even the heartiest appetite. It's a carnivore's dream come
+            true!
+          </p>
+          <!-- see more button -->
+          <button class="seemore" onclick="toggleDescription(this)">
+            See more
+          </button>
+          <!-- grab button -->
+          <button class="grab" onclick="toggleCheckboxl8()">Grab!</button>
+          <!-- check box for add cart-->
+          <div class="checkbox-container" id="checkbox-containerl8">
+            <br />
+            <form id="order-forml8">
+              <label for="quantity">Quantity:</label>
+              <input
+                type="number"
+                id="quantityl8"
+                min="1"
+                value="1"
+                onchange="updatePricel8()"
+              /><br /><br />
+
+              <label for="price">Price:</label>
+              <span id="pricel8">LKR 1770.00</span><br /><br />
+
+              <input
+                style="background-color: green; color: white; border: none"
+                type="submit"
+                value="Add to Cart"
+              />
+            </form>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <!-- sauce and chips menu-->
+    <section class="menu">
+      <h2>Finishing Touches N' Chips</h2>
+      <ul class="ml">
+        <li>
+          <img
+            src="https://cdn.glitch.global/94776099-51bd-46af-8c51-d6a1bef3dea4/chips.png?v=1714915016188"
+            alt="chips"
+          />
+          <h3>Crunchy Crisps</h3>
+          <p>
+            Indulge in the irresistible crunch of our potato chips. Each bite is
+            a savory sensation, with the perfect balance of salt and crispiness.
+            Made from the finest potatoes and expertly seasoned, our chips are
+            the ultimate snack for satisfying your cravings and tantalizing your
+            taste buds.
+          </p>
+          <!-- see more button -->
+          <button class="seemore" onclick="toggleDescription(this)">
+            See more
+          </button>
+          <!-- grab button -->
+          <button class="grab" onclick="toggleCheckboxt()">Grab!</button>
+          <!-- check box for add cart-->
+          <div class="checkbox-container" id="checkbox-containert">
+            <br />
+            <form id="order-formt">
+              <label for="quantity">Quantity:</label>
+              <input
+                type="number"
+                id="quantityt"
+                min="1"
+                value="1"
+                onchange="updatePricet()"
+              /><br /><br />
+
+              <label for="price">Price:</label>
+              <span id="pricet">LKR 400.00</span><br /><br />
+
+              <input
+                style="background-color: green; color: white; border: none"
+                type="submit"
+                value="Add to Cart"
+              />
+            </form>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://cdn.glitch.global/94776099-51bd-46af-8c51-d6a1bef3dea4/tomato%20sauce.png?v=1714915018469"
+            alt="dips"
+          />
+          <h3>Red Gold Sauce</h3>
+          <p>
+            Savor the tangy goodness of our tomato sauce. Crafted from the
+            finest tomatoes and seasoned to perfection, it adds a burst of
+            flavor to every dish.
+          </p>
+          <!-- see more button -->
+          <button class="seemore" onclick="toggleDescription(this)">
+            See more
+          </button>
+          <!-- grab button -->
+          <button class="grab" onclick="toggleCheckboxt1()">Grab!</button>
+          <!-- check box for add cart-->
+          <div class="checkbox-container" id="checkbox-containert1">
+            <br />
+            <form id="order-formt1">
+              <label for="quantity">Quantity:</label>
+              <input
+                type="number"
+                id="quantityt1"
+                min="1"
+                value="1"
+                onchange="updatePricet1()"
+              /><br /><br />
+
+              <label for="price">Price:</label>
+              <span id="pricet1">LKR 150.00</span><br /><br />
+              <input
+                style="background-color: green; color: white; border: none"
+                type="submit"
+                value="Add to Cart"
+              />
+            </form>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://cdn.glitch.global/94776099-51bd-46af-8c51-d6a1bef3dea4/garlic%20dip.png?v=1714915017446"
+            alt="dips"
+          />
+          <h3>Creamy Garlic Fusion</h3>
+          <p>
+            Savor the rich taste of our garlic dip. Made with real roasted
+            garlic and blended to creamy perfection, it's a flavorful companion
+            for your favorite snacks or dishes. With its bold aroma and savory
+            flavor, it's sure to elevate any bite.
+          </p>
+          <!-- see more button -->
+          <button class="seemore" onclick="toggleDescription(this)">
+            See more
+          </button>
+          <!-- grab button -->
+          <button class="grab" onclick="toggleCheckboxt2()">Grab!</button>
+          <!-- check box for add cart-->
+          <div class="checkbox-container" id="checkbox-containert2">
+            <br />
+            <form id="order-formt2">
+              <label for="quantity">Quantity:</label>
+              <input
+                type="number"
+                id="quantityt2"
+                min="1"
+                value="1"
+                onchange="updatePricet2()"
+              /><br /><br />
+
+              <label for="price">Price:</label>
+              <span id="pricet2">LKR 150.00</span><br /><br />
+              <input
+                style="background-color: green; color: white; border: none"
+                type="submit"
+                value="Add to Cart"
+              />
+            </form>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://cdn.glitch.global/94776099-51bd-46af-8c51-d6a1bef3dea4/cheese%20dip.png?v=1714915015036"
+            alt="dips"
+          />
+          <h3>Cheesy Heaven Dip</h3>
+          <p>
+            Dive into the creamy richness of our cheese dip. Crafted with the
+            finest cheeses and blended to perfection, each bite is a savory
+            delight. Whether paired with chips, veggies, or breadsticks, it's
+            the perfect indulgence for cheese lovers everywhere.
+          </p>
+          <!-- see more button -->
+          <button class="seemore" onclick="toggleDescription(this)">
+            See more
+          </button>
+          <!-- grab button -->
+          <button class="grab" onclick="toggleCheckboxt3()">Grab!</button>
+          <!-- check box for add cart-->
+          <div class="checkbox-container" id="checkbox-containert3">
+            <br />
+            <form id="order-formt3">
+              <label for="quantity">Quantity:</label>
+              <input
+                type="number"
+                id="quantityt3"
+                min="1"
+                value="1"
+                onchange="updatePricet3()"
+              /><br /><br />
+
+              <label for="price">Price:</label>
+              <span id="pricet3">LKR 150.00</span><br /><br />
+              <input
+                style="background-color: green; color: white; border: none"
+                type="submit"
+                value="Add to Cart"
+              />
+            </form>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <!-- drinks menu-->
+    <section class="menu">
+      <h2>Thirst Quenchers</h2>
+      <ul class="ml">
+        <li>
+          <img
+            src="https://cdn.glitch.global/94776099-51bd-46af-8c51-d6a1bef3dea4/cola.png?v=1714913576163"
+            alt="drink"
+          />
+          <h3>Classic Cola</h3>
+          <p>
+            Sip on our classic cola, a timeless beverage loved by all. With its
+            refreshing fizz and familiar taste, it's the perfect companion to
+            any meal, adding a touch of nostalgia to every sip.
+          </p>
+          <!-- see more button -->
+          <button class="seemore" onclick="toggleDescription(this)">
+            See more
+          </button>
+          <!-- grab button -->
+          <button class="grab" onclick="toggleCheckboxd1()">Grab!</button>
+          <!-- check box for add cart-->
+          <div class="checkbox-container" id="checkbox-containerd1">
+            <br />
+            <form id="order-formd1">
+              <label for="quantity">Quantity:</label>
+              <input
+                type="number"
+                id="quantityd1"
+                min="1"
+                value="1"
+                onchange="updatePriced1()"
+              /><br /><br />
+
+              <label for="price">Price:</label>
+              <span id="priced1">LKR 250.00</span><br /><br />
+              <input
+                style="background-color: green; color: white; border: none"
+                type="submit"
+                value="Add to Cart"
+              />
+            </form>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://cdn.glitch.global/94776099-51bd-46af-8c51-d6a1bef3dea4/lemon%20soda.png?v=1714913579341"
+            alt="drink"
+          />
+          <h3>Citrus Zing Soda</h3>
+          <p>
+            Quench your thirst with our refreshing lemon soda. Bursting with
+            tangy citrus flavor and effervescent bubbles, it's a zesty and
+            invigorating drink that will leave you feeling refreshed and
+            revitalized.
+          </p>
+          <!-- see more button -->
+          <button class="seemore" onclick="toggleDescription(this)">
+            See more
+          </button>
+          <!-- grab button -->
+          <button class="grab" onclick="toggleCheckboxd2()">Grab!</button>
+          <!-- check box for add cart-->
+          <div class="checkbox-container" id="checkbox-containerd2">
+            <br />
+            <form id="order-formd2">
+              <label for="quantity">Quantity:</label>
+              <input
+                type="number"
+                id="quantityd2"
+                min="1"
+                value="1"
+                onchange="updatePriced2()"
+              /><br /><br />
+
+              <label for="price">Price:</label>
+              <span id="priced2">LKR 250.00</span><br /><br />
+              <input
+                style="background-color: green; color: white; border: none"
+                type="submit"
+                value="Add to Cart"
+              />
+            </form>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://cdn.glitch.global/94776099-51bd-46af-8c51-d6a1bef3dea4/apple%20soda.png?v=1714913573550"
+            alt="drink"
+          />
+          <h3>Honeycrisp Nectar</h3>
+          <p>
+            Savor the crisp sweetness of our apple juice. Made from the finest
+            handpicked apples, each sip is a burst of refreshing flavor that
+            will invigorate your senses and quench your thirst.
+          </p>
+          <!-- see more button -->
+          <button class="seemore" onclick="toggleDescription(this)">
+            See more
+          </button>
+          <!-- grab button -->
+          <button class="grab" onclick="toggleCheckboxd3()">Grab!</button>
+          <!-- check box for add cart-->
+          <div class="checkbox-container" id="checkbox-containerd3">
+            <br />
+            <form id="order-formd3">
+              <label for="quantity">Quantity:</label>
+              <input
+                type="number"
+                id="quantityd3"
+                min="1"
+                value="1"
+                onchange="updatePriced3()"
+              /><br /><br />
+
+              <label for="price">Price:</label>
+              <span id="priced3">LKR 300.00</span><br /><br />
+              <input
+                style="background-color: green; color: white; border: none"
+                type="submit"
+                value="Add to Cart"
+              />
+            </form>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://cdn.glitch.global/94776099-51bd-46af-8c51-d6a1bef3dea4/orange%20soda.png?v=1714913583543"
+            alt="drink"
+          />
+          <h3>Sunshine Squeeze</h3>
+          <p>
+            Experience the sunny taste of our orange juice. Bursting with tangy
+            sweetness and packed with Vitamin C, each sip is a refreshing burst
+            of citrus flavor that will brighten your day and invigorate your
+            senses.
+          </p>
+          <!-- see more button -->
+          <button class="seemore" onclick="toggleDescription(this)">
+            See more
+          </button>
+          <!-- grab button -->
+          <button class="grab" onclick="toggleCheckboxd4()">Grab!</button>
+          <!-- check box for add cart-->
+          <div class="checkbox-container" id="checkbox-containerd4">
+            <br />
+            <form id="order-formd4">
+              <label for="quantity">Quantity:</label>
+              <input
+                type="number"
+                id="quantityd4"
+                min="1"
+                value="1"
+                onchange="updatePriced4()"
+              /><br /><br />
+
+              <label for="price">Price:</label>
+              <span id="priced4">LKR 300.00</span><br /><br />
+              <input
+                style="background-color: green; color: white; border: none"
+                type="submit"
+                value="Add to Cart"
+              />
+            </form>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://cdn.glitch.global/94776099-51bd-46af-8c51-d6a1bef3dea4/mango%20juice.png?v=1714913582253"
+            alt="drink"
+          />
+          <h3>Tropical Bliss Juice</h3>
+          <p>
+            Indulge in the tropical sweetness of our mango juice. Made from
+            succulent, sun-ripened mangoes, each sip is a burst of vibrant
+            flavor that will transport you to a sunny paradise. Refreshing and
+            delicious, it's the perfect way to quench your thirst and brighten
+            your day.
+          </p>
+          <!-- see more button -->
+          <button class="seemore" onclick="toggleDescription(this)">
+            See more
+          </button>
+          <!-- grab button -->
+          <button class="grab" onclick="toggleCheckboxd5()">Grab!</button>
+          <!-- check box for add cart-->
+          <div class="checkbox-container" id="checkbox-containerd5">
+            <br />
+            <form id="order-formd5">
+              <label for="quantity">Quantity:</label>
+              <input
+                type="number"
+                id="quantityd5"
+                min="1"
+                value="1"
+                onchange="updatePriced5()"
+              /><br /><br />
+
+              <label for="price">Price:</label>
+              <span id="priced5">LKR 300.00</span><br /><br />
+              <input
+                style="background-color: green; color: white; border: none"
+                type="submit"
+                value="Add to Cart"
+              />
+            </form>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://cdn.glitch.global/94776099-51bd-46af-8c51-d6a1bef3dea4/vanila%20shake.png?v=1714913584850"
+            alt="drink"
+          />
+          <h3>Creamy Vanilla Swirl</h3>
+          <p>
+            Indulge in the velvety smoothness of our vanilla shake. Made with
+            creamy vanilla ice cream and topped with a swirl of whipped cream,
+            each sip is a heavenly blend of sweetness and richness that will
+            satisfy your cravings and leave you wanting more.
+          </p>
+          <!-- see more button -->
+          <button class="seemore" onclick="toggleDescription(this)">
+            See more
+          </button>
+          <!-- grab button -->
+          <button class="grab" onclick="toggleCheckboxd6()">Grab!</button>
+          <!-- check box for add cart-->
+          <div class="checkbox-container" id="checkbox-containerd6">
+            <br />
+            <form id="order-formd6">
+              <label for="quantity">Quantity:</label>
+              <input
+                type="number"
+                id="quantityd6"
+                min="1"
+                value="1"
+                onchange="updatePriced6()"
+              /><br /><br />
+
+              <label for="price">Price:</label>
+              <span id="priced6">LKR 450.00</span><br /><br />
+              <input
+                style="background-color: green; color: white; border: none"
+                type="submit"
+                value="Add to Cart"
+              />
+            </form>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://cdn.glitch.global/94776099-51bd-46af-8c51-d6a1bef3dea4/chocolate%20shake.png?v=1714913574869"
+            alt="drink"
+          />
+          <h3>Choco Heaven</h3>
+          <p>
+            Delight in the velvety goodness of our chocolate shake. Made with
+            rich, creamy chocolate ice cream and topped with a dollop of whipped
+            cream, each sip is a decadent treat that will satisfy your sweet
+            cravings and leave you wanting more.
+          </p>
+          <!-- see more button -->
+          <button class="seemore" onclick="toggleDescription(this)">
+            See more
+          </button>
+          <!-- grab button -->
+          <button class="grab" onclick="toggleCheckboxd7()">Grab!</button>
+          <!-- check box for add cart-->
+          <div class="checkbox-container" id="checkbox-containerd7">
+            <br />
+            <form id="order-formd7">
+              <label for="quantity">Quantity:</label>
+              <input
+                type="number"
+                id="quantityd7"
+                min="1"
+                value="1"
+                onchange="updatePriced7()"
+              /><br /><br />
+
+              <label for="price">Price:</label>
+              <span id="priced7">LKR 450.00</span><br /><br />
+              <input
+                style="background-color: green; color: white; border: none"
+                type="submit"
+                value="Add to Cart"
+              />
+            </form>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://cdn.glitch.global/94776099-51bd-46af-8c51-d6a1bef3dea4/Iced%20cofee.png?v=1714913577453"
+            alt="drink"
+          />
+          <h3>Frosty Mocha Chill</h3>
+          <p>
+            Quench your thirst and energize your day with our refreshing iced
+            coffee. Made with premium coffee beans and served over ice, each sip
+            is a cool and invigorating blend of rich espresso and creamy
+            sweetness. It's the perfect pick-me-up on a hot day, sure to leave
+            you feeling refreshed and revitalized.
+          </p>
+          <!-- see more button -->
+          <button class="seemore" onclick="toggleDescription(this)">
+            See more
+          </button>
+          <!-- grab button -->
+          <button class="grab" onclick="toggleCheckboxd8()">Grab!</button>
+          <!-- check box for add cart-->
+          <div class="checkbox-container" id="checkbox-containerd8">
+            <br />
+            <form id="order-formd8">
+              <label for="quantity">Quantity:</label>
+              <input
+                type="number"
+                id="quantityd8"
+                min="1"
+                value="1"
+                onchange="updatePriced8()"
+              /><br /><br />
+
+              <label for="price">Price:</label>
+              <span id="priced8">LKR 500.00</span><br /><br />
+              <input
+                style="background-color: green; color: white; border: none"
+                type="submit"
+                value="Add to Cart"
+              />
+            </form>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </body>
+  <footer class="footer">
+    <div class="footer container">
+      <div class="row">
+        <div class="col-md">
+          <img
+            src="https://cdn.glitch.global/94776099-51bd-46af-8c51-d6a1bef3dea4/pizza-logo-vector_25327-119%20copy.png?v=1714733968241"
+            width="15%"
+          />
+        </div>
+        <div class="col-md">
+          <hr />
+        </div>
+        <div class="col-md">
+          <a href="https://web.whatsapp.com/" target="_blank">
+            <img
+              src="https://cdn.glitch.global/94776099-51bd-46af-8c51-d6a1bef3dea4/pngegg%20(23).png?v=1714808756201"
+              width="10%"
+            />
+          </a>
+          <a href="https://www.instagram.com/?hl=en" target="_blank">
+            <img
+              src="https://cdn.glitch.global/94776099-51bd-46af-8c51-d6a1bef3dea4/pngegg%20(24).png?v=1714809068317"
+              width="10%"
+            />
+          </a>
+          <a href="https://www.facebook.com/" target="_blank">
+            <img
+              src="https://cdn.glitch.global/94776099-51bd-46af-8c51-d6a1bef3dea4/pngegg%20(25).png?v=1714809070358"
+              width="10%"
+            />
+          </a>
+          <a href="https://www.youtube.com/index" target="_blank">
+            <img
+              src="https://cdn.glitch.global/94776099-51bd-46af-8c51-d6a1bef3dea4/pngegg%20(26).png?v=1714809069322"
+              width="10%"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer container">
+      <div class="row">
+        <div class="col-md">Delivery - 011 999 9999</div>
+        <div class="col-md">stratasnwheels@email.com</div>
+        <div class="col-md">
+          <a style="color: white" href="privacy.html">Privacy Policy</a><br />
+          <a style="color: white" href="about.html">About us</a>
+        </div>
+      </div>
+      <br />
+    </div>
+    <div class="footer container">
+      <div class="row">
+        <div class="col-md">
+          <a
+            href="https://play.google.com/store/games?device=windows&pli=1"
+            target="_blank"
+          >
+            <img
+              src="https://cdn.glitch.global/94776099-51bd-46af-8c51-d6a1bef3dea4/google-play.png?v=1714819685115"
+              width="10%"
+            />
+          </a>
+          <a href="https://www.apple.com/app-store/" target="_blank">
+            <img
+              src="https://cdn.glitch.global/94776099-51bd-46af-8c51-d6a1bef3dea4/app-store-ios.svg?v=1714819697516"
+              width="10%"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+    <br />
+    <p>&copy; 2024 Saucy Stratas N' Savory Wheels. All Rights Reserved.</p>
+  </footer>
+</html>

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Saucy Stratas N' Savory Wheels</title>
+    <!-- The website stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+    <!-- The website JavaScript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <!-- header content -->
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <a href="index.html"
+            ><img
+              src="https://cdn.glitch.global/94776099-51bd-46af-8c51-d6a1bef3dea4/pizza-logo-vector_25327-119%20copy.png?v=1714733968241"
+              alt="Logo"
+          /></a>
+          <h2 class="topic">Saucy Stratas N' Savory Wheels...</h2>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="combos.html">Combos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- combos -->
+    <section class="menu">
+      <h2>Combos</h2>
+      <ul class="ml">
+        <li>
+          <img
+            src="https://cdn.glitch.global/94776099-51bd-46af-8c51-d6a1bef3dea4/Post%20Pizza.png?v=1714749750023"
+            alt="combo"
+          />
+          <h3>Wheel Combo</h3>
+          <p>
+            Indulge in our wheel combo featuring two large pizzas, 1.5 liters of
+            refreshing cola, and a side of crispy French fries. Perfect for
+            sharing with family and friends, our combo delivers a delicious
+            feast that satisfies every craving.
+          </p>
+          <!-- see more button -->
+          <button class="seemore" onclick="toggleDescription(this)">
+            See more
+          </button>
+          <!-- grab button -->
+          <button class="grab" onclick="toggleCheckboxc1()">Grab!</button>
+          <!-- check box for add cart-->
+          <div class="checkbox-container" id="checkbox-containerc1">
+            <br />
+            <form id="order-formc1">
+              <label for="quantity">Quantity:</label>
+              <input
+                type="number"
+                id="quantityc1"
+                min="1"
+                value="1"
+                onchange="updatePricec1()"
+              /><br /><br />
+
+              <label for="price">Price:</label>
+              <span id="pricec1">LKR 5900.00</span><br /><br />
+              <input
+                style="background-color: green; color: white; border: none"
+                type="submit"
+                value="Add to Cart"
+              />
+            </form>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://cdn.glitch.global/94776099-51bd-46af-8c51-d6a1bef3dea4/lasagna%20post.png?v=1714748274740"
+            alt="combo"
+          />
+          <h3>Stratas Combo</h3>
+          <p>
+            Indulge in our stratas combo featuring four generous servings of our
+            signature lasagna, perfectly paired with a refreshing 1.5 liters of
+            cola and crispy French fries. Enjoy a satisfying meal that combines
+            Italian flavors with classic sides, perfect for sharing with friends
+            and family.
+          </p>
+          <!-- see more button -->
+          <button class="seemore" onclick="toggleDescription(this)">
+            See more
+          </button>
+          <!-- grab button -->
+          <button class="grab" onclick="toggleCheckboxc2()">Grab!</button>
+          <!-- check box for add cart-->
+          <div class="checkbox-container" id="checkbox-containerc2">
+            <br />
+            <form id="order-formc2">
+              <label for="quantity">Quantity:</label>
+              <input
+                type="number"
+                id="quantityc2"
+                min="1"
+                value="1"
+                onchange="updatePricec2()"
+              /><br /><br />
+
+              <label for="price">Price:</label>
+              <span id="pricec2">LKR 6200.00</span><br /><br />
+              <input
+                style="background-color: green; color: white; border: none"
+                type="submit"
+                value="Add to Cart"
+              />
+            </form>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://cdn.glitch.global/94776099-51bd-46af-8c51-d6a1bef3dea4/vs%20post.png?v=1714749560168"
+            alt="combo"
+          />
+          <h3>Stratas vs Wheels</h3>
+          <p>
+            Indulge in our stratas vs wheels combo! Enjoy one large pizza, two
+            lasagnas, a generous serving of French fries, and 1.5 liters of
+            refreshing cola. Perfect for sharing with friends and family, this
+            combo offers a delightful mix of flavors that will satisfy every
+            craving.
+          </p>
+          <!-- see more button -->
+          <button class="seemore" onclick="toggleDescription(this)">
+            See more
+          </button>
+          <!-- grab button -->
+          <button class="grab" onclick="toggleCheckboxc3()">Grab!</button>
+          <!-- check box for add cart-->
+          <div class="checkbox-container" id="checkbox-containerc3">
+            <br />
+            <form id="order-formc3">
+              <label for="quantity">Quantity:</label>
+              <input
+                type="number"
+                id="quantityc3"
+                min="1"
+                value="1"
+                onchange="updatePricec3()"
+              /><br /><br />
+
+              <label for="price">Price:</label>
+              <span id="pricec3">LKR 6200.00</span><br /><br />
+              <input
+                style="background-color: green; color: white; border: none"
+                type="submit"
+                value="Add to Cart"
+              />
+            </form>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://cdn.glitch.global/94776099-51bd-46af-8c51-d6a1bef3dea4/personal%20combo.png?v=1714981729672"
+            alt="combo"
+          />
+          <h3>Solo Combo</h3>
+          <p>
+            Indulge in our Solo Combo, featuring a savory Small Meat Lovers
+            Wheel, a tantalizing Firecracker Chicken Strata, and a sweet Choco
+            Heaven. Perfect for satisfying all your cravings in one delightful
+            meal
+          </p>
+          <!-- see more button -->
+          <button class="seemore" onclick="toggleDescription(this)">
+            See more
+          </button>
+          <!-- grab button -->
+          <button class="grab" onclick="toggleCheckboxc4()">Grab!</button>
+          <!-- check box for add cart-->
+          <div class="checkbox-container" id="checkbox-containerc4">
+            <br />
+            <form id="order-formc4">
+              <label for="quantity">Quantity:</label>
+              <input
+                type="number"
+                id="quantityc4"
+                min="1"
+                value="1"
+                onchange="updatePricec4()"
+              /><br /><br />
+
+              <label for="price">Price:</label>
+              <span id="pricec4">LKR 2000.00</span><br /><br />
+              <input
+                style="background-color: green; color: white; border: none"
+                type="submit"
+                value="Add to Cart"
+              />
+            </form>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </body>
+  <footer class="footer">
+    <div class="footer container">
+      <div class="row">
+        <div class="col-md">
+          <img
+            src="https://cdn.glitch.global/94776099-51bd-46af-8c51-d6a1bef3dea4/pizza-logo-vector_25327-119%20copy.png?v=1714733968241"
+            width="15%"
+          />
+        </div>
+        <div class="col-md">
+          <hr />
+        </div>
+        <div class="col-md">
+          <a href="https://web.whatsapp.com/" target="_blank">
+            <img
+              src="https://cdn.glitch.global/94776099-51bd-46af-8c51-d6a1bef3dea4/pngegg%20(23).png?v=1714808756201"
+              width="10%"
+            />
+          </a>
+          <a href="https://www.instagram.com/?hl=en" target="_blank">
+            <img
+              src="https://cdn.glitch.global/94776099-51bd-46af-8c51-d6a1bef3dea4/pngegg%20(24).png?v=1714809068317"
+              width="10%"
+            />
+          </a>
+          <a href="https://www.facebook.com/" target="_blank">
+            <img
+              src="https://cdn.glitch.global/94776099-51bd-46af-8c51-d6a1bef3dea4/pngegg%20(25).png?v=1714809070358"
+              width="10%"
+            />
+          </a>
+          <a href="https://www.youtube.com/index" target="_blank">
+            <img
+              src="https://cdn.glitch.global/94776099-51bd-46af-8c51-d6a1bef3dea4/pngegg%20(26).png?v=1714809069322"
+              width="10%"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer container">
+      <div class="row">
+        <div class="col-md">Delivery - 011 999 9999</div>
+        <div class="col-md">stratasnwheels@email.com</div>
+        <div class="col-md">
+          <a style="color: white" href="privacy.html">Privacy Policy</a><br />
+          <a style="color: white" href="about.html">About us</a>
+        </div>
+      </div>
+      <br />
+    </div>
+    <div class="footer container">
+      <div class="row">
+        <div class="col-md">
+          <a
+            href="https://play.google.com/store/games?device=windows&pli=1"
+            target="_blank"
+          >
+            <img
+              src="https://cdn.glitch.global/94776099-51bd-46af-8c51-d6a1bef3dea4/google-play.png?v=1714819685115"
+              width="10%"
+            />
+          </a>
+          <a href="https://www.apple.com/app-store/" target="_blank">
+            <img
+              src="https://cdn.glitch.global/94776099-51bd-46af-8c51-d6a1bef3dea4/app-store-ios.svg?v=1714819697516"
+              width="10%"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+    <br />
+    <p>&copy; 2024 Saucy Stratas N' Savory Wheels. All Rights Reserved.</p>
+  </footer>
+</html>
